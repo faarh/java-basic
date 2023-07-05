@@ -11,8 +11,20 @@ public class ComplexNumber {
          this.imgpart = imgpart;
          this.realpart = realpart;
      }
-     private void print()
+     public void print()
      {
-         System.out.println("( " +realpart+" + "+imgpart+" )");
+         System.out.println("( " +realpart+" + "+imgpart+" i)");
      }
+     public ComplexNumber add(ComplexNumber c)
+     {
+         int r = this.realpart + c.realpart;
+         int i = this.imgpart + c.imgpart;
+         return new ComplexNumber(r,i);
+     }
+    public ComplexNumber subtract(ComplexNumber c)
+    {
+        int r = this.realpart - c.realpart;
+        int i = this.imgpart - c.imgpart;
+        return new ComplexNumber(r,i);
+    }
 }
