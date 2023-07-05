@@ -1,3 +1,7 @@
+package src;
+
+import src.ComplexNumber;
+
 public class Main {
     public static void main(String[] args) {
         ComplexNumber C1 = new ComplexNumber(7,4);
