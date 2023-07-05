@@ -27,4 +27,5 @@ public class ComplexNumber {
         int i = this.imgpart - c.imgpart;
         return new ComplexNumber(r,i);
     }
+
 }
